@@ -250,7 +250,7 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .works {
     display: none;
   }
@@ -904,6 +904,28 @@ input[type='email']::placeholder {
   margin-right: auto;
   margin-top: 30px;
   padding: 8px 31px;
+}
+
+.menu-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-btn .icon-close {
+  display: none;
+}
+
+.menu-btn.is-open .icon-close {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
 }
 
 .logo__header, .features__list, .works__list, .social-media__list, .clients__list, .order-form, .order-form__label, .examples__filter, .examples__list {
