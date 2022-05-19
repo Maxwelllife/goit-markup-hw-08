@@ -1,0 +1,21 @@
+.address-info__list {
+  padding-bottom: 60px;
+
+  font-style: normal;
+  font-size: $fs2;
+  line-height: 1.71;
+}
+.address-info__item:not(:last-child) {
+  padding-bottom: 9px;
+}
+
+.address-info__link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms $cubic;
+  &--color {
+    color: $white-color;
+  }
+}
+.address-info__item:not(:first-child) .address-info__link:hover {
+  color: $accient-color;
+}

@@ -1,0 +1,8 @@
+.examples__filter {
+  @extend %flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.examples__filter:not(:last-child) {
+  margin-left: 8px;
+}

@@ -1,0 +1,39 @@
+.works__list {
+  @extend %flex;
+  justify-content: space-between;
+}
+.works__item {
+  position: relative;
+}
+/*подрезаем картинки под псевдоэлемент потому что он не совпадает*/
+.works__img {
+  display: block;
+  height: 100%;
+}
+
+/* .works-item + .works-item {            рабочий олдскульный вариант марджинов кроме крайних
+        margin-left: 30px;
+    } */
+
+.work__definition {
+  position: absolute;
+  display: block;
+  height: 70px;
+  width: 370px;
+  bottom: 0;
+  left: 0;
+  padding-top: 27px;
+
+  font-weight: $fw2;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+// ----------------------basic styles
+.works {
+  @media screen and (max-width: 1599px) {
+    display: none;
+  }
+}
