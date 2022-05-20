@@ -112,11 +112,13 @@
   padding: 8px 31px;
 }
 .menu-btn {
-  display: inline-flex;
+  display: block;
   margin: 0;
   padding: 0;
   border: none;
+  margin-left: auto;
   background-color: transparent;
+  z-index: 2;
 }
 .menu-btn .icon-close {
   display: none;
@@ -126,4 +128,8 @@
 }
 .menu-btn.is-open .icon-menu {
   display: none;
+}
+.icon-menu:hover,
+.icon-close:hover {
+  fill: $accient-color;
 }
