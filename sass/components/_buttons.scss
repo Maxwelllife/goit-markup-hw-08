@@ -111,6 +111,11 @@
   margin-top: 30px;
   padding: 8px 31px;
 }
+.site-nav .menu-btn {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 .menu-btn {
   display: block;
   margin: 0;

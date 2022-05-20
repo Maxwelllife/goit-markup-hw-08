@@ -1,9 +1,7 @@
 // .features {
 //   padding-bottom: 0px;
 // }
-// .features__list {
-//   @extend %flex;
-// }
+
 // .features__item:not(:last-child) {
 //   margin-right: 30px;
 // }
@@ -62,8 +60,9 @@
 .features__list {
   @extend %flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
   @media screen and (min-width: 768px) {
     width: 768px;
   }
