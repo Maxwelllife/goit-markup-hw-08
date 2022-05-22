@@ -71,4 +71,19 @@ input[type='email']::placeholder {
     margin-left: auto;
     width: 450px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+// ----------------------desktop styles
+.subscribe__box {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.subscribe {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }

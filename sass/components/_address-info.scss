@@ -19,3 +19,9 @@
 .address-info__item:not(:first-child) .address-info__link:hover {
   color: $accient-color;
 }
+
+.address-info__list {
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}

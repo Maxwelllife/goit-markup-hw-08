@@ -72,3 +72,14 @@
     }
   }
 }
+
+// ---------------------desktop
+.clients__list .clients__item {
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 120px) / 6);
+
+    & {
+      margin-bottom: 0px;
+    }
+  }
+}

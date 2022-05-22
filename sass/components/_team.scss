@@ -86,3 +86,14 @@
     margin-bottom: 30px;
   }
 }
+
+// -------------------------------decktop
+.team__item {
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 // ----------------------basic styles
 
 .site-nav {
-  @extend %flex-align-centr;
+  @extend %flex-full;
 
   &__list {
     @extend %flex;
@@ -85,17 +85,13 @@
   margin-right: 10px;
   fill: currentColor;
 }
+
 .current,      /*актуальная страница */
 .site-nav__link:hover,        /* ссылки в навигации хедера */
 .site-nav__link:focus,
 .connect-list__link:hover,
 .connect-list__link:focus {
   color: $accient-color;
-}
-
-// цей флекс потрібен весь час
-.site-nav {
-  @extend %flex-full;
 }
 
 .site-nav .site-nav__list {
@@ -155,14 +151,16 @@
   font-size: $fs10;
   line-height: $lh2;
   color: $primery-text-color;
-
-  &:hover,
-  &:focus {
-    font-size: $fs7;
-    color: $accient-color;
-  }
+  // &:hover,
+  // &:focus {
+  //   font-size: $fs7;
+  //   color: $accient-color;
+  // }
 }
-
+.mob-connect__link--big-blue {
+  font-size: $fs7;
+  color: $accient-color;
+}
 .mob-social__list {
   @extend %flex;
 }
@@ -171,5 +169,8 @@
 }
 .mob-social__link {
   font-size: $fs4;
+  color: $accient-color;
+}
+.nav-menu__current.nav-menu__link {
   color: $accient-color;
 }

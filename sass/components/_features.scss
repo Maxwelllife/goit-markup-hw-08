@@ -32,6 +32,16 @@
 
 .features__item:not(:last-child) {
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    &:nth-last-child(2) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-bottom: 0px;
+    }
+  }
 }
 .features__image {
   width: 100%;
@@ -76,5 +86,23 @@
 .features__title {
   @media screen and (max-width: 767px) {
     text-align: center;
+  }
+}
+
+// ---------------------------------------------desktop
+
+.features__list {
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.features__item {
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+}
+.features {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
   }
 }
