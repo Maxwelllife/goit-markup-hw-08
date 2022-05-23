@@ -9,12 +9,21 @@
 // ----------------------basic styles
 .examples__filter {
   @extend %flex;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
   margin-bottom: 34px;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
+    margin-bottom: -15px;
   }
 }
 .examples__filter:not(:last-child) {
   margin-left: 8px;
+}
+
+.filter-item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }

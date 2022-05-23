@@ -16,7 +16,7 @@
 // ----------------------basic styles
 
 .page-footer {
-  max-width: 1600px;
+  // max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -24,18 +24,7 @@
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
-
   background: $background-header-footer;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1600px;
-  }
 }
 
 .page-footer__titles {

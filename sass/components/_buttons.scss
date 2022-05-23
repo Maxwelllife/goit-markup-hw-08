@@ -98,9 +98,10 @@
 }
 
 .subscribe__btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-
+  margin-right: auto;
+  margin-left: auto;
   padding: 8px 28px;
 }
 
@@ -117,6 +118,8 @@
   }
 }
 .menu-btn {
+  top: 20px;
+  right: 15px;
   display: block;
   margin: 0;
   padding: 0;
@@ -134,6 +137,10 @@
 .menu-btn.is-open .icon-menu {
   display: none;
 }
+.menu-btn .is-open {
+  position: fixed;
+}
+
 .icon-menu:hover,
 .icon-close:hover {
   fill: $accient-color;
