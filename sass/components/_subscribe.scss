@@ -68,6 +68,7 @@
 }
 
 input[type='email']::placeholder {
+  padding-left: 16px;
   font-size: $fs3;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
