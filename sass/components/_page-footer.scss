@@ -1,30 +1,14 @@
-// .page-footer {
-//   max-width: 1600px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   text-align: center;
-//   background: $background-header-footer;
-// }
-
-// .page-footer__titles {
-//   margin-bottom: 20px;
-//   font-size: $fs2;
-//   text-transform: uppercase;
-//   color: $white-color;
-// }
-
-// ----------------------basic styles
-
 .page-footer {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
+  background: $background-header-footer;
+
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
-  background: $background-header-footer;
 }
 
 .page-footer__titles {

@@ -6,15 +6,16 @@
   height: 100%;
   top: 0;
   left: 0;
-  @media screen and (max-width: 767px) {
-    padding: 93px 45px;
-  }
   overflow-y: scroll;
   opacity: 1;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 3;
+
+  @media screen and (max-width: 767px) {
+    padding: 93px 45px;
+  }
 }
 /* правило is-hidden активно пока не нажмем кнопку в результате чего оно перестанет быть активным и модалка будет опасити 1 */
 .is-hidden {
@@ -154,11 +155,3 @@
   background-size: contain;
   background-origin: border-box;
 }
-// .order-form__label:focus-within > .order-form__input {
-//   border-color: $accient-color;
-//   outline: none;
-// }
-// .order-form__label:focus-within > .order-form__comment {
-//   border-color: $accient-color;
-//   outline: none;
-// }

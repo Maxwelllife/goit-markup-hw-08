@@ -1,3 +1,9 @@
+.works {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .works__list {
   @extend %flex;
   justify-content: space-between;
@@ -5,12 +11,6 @@
 .works__item {
   position: relative;
 }
-// /*подрезаем картинки под псевдоэлемент потому что он не совпадает*/
-// .works__img {
-//   display: block;
-//   height: 100%;
-// }
-
 /* .works-item + .works-item {            рабочий олдскульный вариант марджинов кроме крайних
         margin-left: 30px;
     } */
@@ -29,11 +29,4 @@
   text-align: center;
   color: $white-color;
   background-color: rgba(47, 48, 58, 0.8);
-}
-
-// ----------------------basic styles
-.works {
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
 }

@@ -1,32 +1,3 @@
-// .hero {
-//   max-width: 1600px;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   text-align: center;
-
-//   background: $background-header-footer;
-// }
-// .overlay {
-//   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//     url(../images/img.jpg);
-//   background-position: center; /* при сужении вьюпорта картинка остаюется по центру*/
-// }
-
-// .hero__title {
-//   margin-bottom: 30px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   max-width: 696px;
-//   color: $white-color;
-//   font-weight: $fw1;
-//   font-size: $fs8;
-//   line-height: 1.36;
-//   letter-spacing: $ls3;
-//   text-transform: uppercase;
-// }
-
 // ----------------------basic styles
 
 .hero {
@@ -44,20 +15,13 @@
   background: $background-header-footer;
 }
 
-// .box {
-//   width: 320px;
-//   height: 240px;
-//   background-image: url('https://picsum.photos/id/237/320/240');
-//   background-size: 320px 240px;
-// }
-
 .overlay {
   max-width: 480px;
   height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/header-img-480.jpg);
   background-position: center; /* при сужении вьюпорта картинка остаюется по центру*/
-  background-size: contain;
+  background-size: 480px 400px;
 }
 /* 2x screens, retina, 960x800 image */
 @media screen and (min-device-pixel-ratio: 2),
