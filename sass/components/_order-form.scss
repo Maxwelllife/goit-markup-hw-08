@@ -48,7 +48,7 @@
 /* а transform: это изменение */
 
 /* крестик закрыть в модалке */
-.modal__close-btn {
+.close-btn {
   @extend %flex-align-centr;
   position: absolute;
   top: 0;
@@ -63,7 +63,7 @@
   transition: fill 250ms $cubic;
 }
 
-.modal__close-btn:hover {
+.close-btn:hover {
   fill: $accient-color;
 }
 
