@@ -40,6 +40,12 @@ body.modal-open {
   overflow: hidden;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -238,12 +244,15 @@ body.modal-open {
 
 .nav-menu.is-open {
   display: block;
-}
-
-.nav-menu.is-open {
   position: fixed;
   overflow-y: scroll;
   height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav .nav-menu {
+    display: none;
+  }
 }
 
 .nav-menu__list {
@@ -352,10 +361,61 @@ body.modal-open {
 }
 
 .overlay {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
+  max-width: 480px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-img-480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-img-480.jpg);
   background-position: center;
   /* при сужении вьюпорта картинка остаюется по центру*/
+  background-size: contain;
+}
+
+/* 2x screens, retina, 960x800 image */
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-img-960.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-img-960.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 1199px;
+    height: 400px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-img-768.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-img-768.jpg);
+    background-position: center;
+    /* при сужении вьюпорта картинка остаюется по центру*/
+    background-size: cover;
+  }
+  /* 2x screens, retina, 1532x800 image */
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-img-1532.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-img-1532.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-img-1600.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-img-1600.jpg);
+    background-position: center;
+    /* при сужении вьюпорта картинка остаюется по центру*/
+    background-size: cover;
+  }
+  /* 2x screens, retina, 3200x1200 image */
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-img-3200.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-img-3200.jpg);
+  }
 }
 
 .hero__title {
@@ -494,12 +554,6 @@ body.modal-open {
 
 .works__item {
   position: relative;
-}
-
-/*подрезаем картинки под псевдоэлемент потому что он не совпадает*/
-.works__img {
-  display: block;
-  height: 100%;
 }
 
 /* .works-item + .works-item {            рабочий олдскульный вариант марджинов кроме крайних
@@ -717,6 +771,7 @@ body.modal-open {
 }
 
 .page-footer {
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -1144,11 +1199,6 @@ input[type='email']::placeholder {
 .examples__thumb {
   position: relative;
   overflow: hidden;
-}
-
-.example-img {
-  display: block;
-  height: 100%;
 }
 
 .examples__overlay-text {

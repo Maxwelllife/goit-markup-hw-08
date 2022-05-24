@@ -42,12 +42,70 @@
   text-align: center;
 
   background: $background-header-footer;
-
 }
+
+// .box {
+//   width: 320px;
+//   height: 240px;
+//   background-image: url('https://picsum.photos/id/237/320/240');
+//   background-size: 320px 240px;
+// }
+
 .overlay {
+  max-width: 480px;
+  height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/img.jpg);
+    url(../images/header-img-480.jpg);
   background-position: center; /* при сужении вьюпорта картинка остаюется по центру*/
+  background-size: contain;
+}
+/* 2x screens, retina, 960x800 image */
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-img-960.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 1199px;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-img-768.jpg);
+    background-position: center; /* при сужении вьюпорта картинка остаюется по центру*/
+    background-size: cover;
+  }
+  /* 2x screens, retina, 1532x800 image */
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header-img-1532.jpg);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-img-1600.jpg);
+    background-position: center; /* при сужении вьюпорта картинка остаюется по центру*/
+    background-size: cover;
+  }
+  /* 2x screens, retina, 3200x1200 image */
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header-img-3200.jpg);
+    }
+  }
 }
 
 .hero__title {

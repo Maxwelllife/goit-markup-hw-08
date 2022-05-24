@@ -15,11 +15,6 @@
   position: relative;
   overflow: hidden;
 }
-// /*подрезаем картинки под псевдоэлемент потому что он не совпадает*/
-.example-img {
-  display: block;
-  height: 100%;
-}
 
 .examples__overlay-text {
   position: absolute;

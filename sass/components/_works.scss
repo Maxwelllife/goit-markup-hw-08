@@ -5,11 +5,11 @@
 .works__item {
   position: relative;
 }
-/*подрезаем картинки под псевдоэлемент потому что он не совпадает*/
-.works__img {
-  display: block;
-  height: 100%;
-}
+// /*подрезаем картинки под псевдоэлемент потому что он не совпадает*/
+// .works__img {
+//   display: block;
+//   height: 100%;
+// }
 
 /* .works-item + .works-item {            рабочий олдскульный вариант марджинов кроме крайних
         margin-left: 30px;
