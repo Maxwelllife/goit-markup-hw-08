@@ -67,6 +67,8 @@
 }
 .connect__link {
   @extend %flex-align-centr;
+  font-size: $fs1;
+  line-height: $lh2;
   color: $primery-text-color;
   transition: color 250ms $cubic;
 
@@ -81,6 +83,11 @@
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (max-width: 1999px) {
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .current,      /*актуальная страница */
