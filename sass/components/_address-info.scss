@@ -2,8 +2,9 @@
   padding-bottom: 60px;
 
   font-style: normal;
-  font-size: $fs2;
-  line-height: 1.71;
+  @include font(14px, null, 1.71, null);
+  //  font-size: $fs2;
+  // line-height: 1.71;
 }
 .address-info__item:not(:last-child) {
   padding-bottom: 9px;

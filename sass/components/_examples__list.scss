@@ -45,27 +45,33 @@
   transform: translate(0, 100%);
   transition: transform 250ms $cubic;
   padding: 63px 24px;
-  line-height: 1.55;
-  font-size: 18px;
+  @include font(18px, null, 1.55, null);
+  // line-height: 1.55;
+  // font-size: 18px;
   color: $white-color;
   background-color: hsla(207, 90%, 54%, 0.9);
 }
-
+.examples__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .examples__text-group {
+  padding: 20px 24px;
   border: 1px solid $border-color;
   border-top: 0;
+  flex-grow: 1;
 }
 .examples__title {
-  padding-left: 24px;
+  // padding-left: 24px;
   color: $secondary-text-color;
-  font-weight: $fw2;
-  font-size: $fs4;
-  line-height: 2;
-  letter-spacing: $ls3;
+  @include font(18px, 700, 2, 0.03em);
+  // font-weight: $fw2;
+  // font-size: $fs4;
+  // line-height: 2;
+  // letter-spacing: $ls3;
 }
 .examples__text {
-  padding-bottom: 20px;
-  padding-left: 24px;
   color: $primery-text-color;
   font-size: $fs3;
   line-height: 1.88;

@@ -80,11 +80,13 @@
   color: $white-color;
   font-weight: $fw1;
   @media screen and (min-width: 1200px) {
-    font-size: $fs8;
-    line-height: 1.36;
+    @include font(44px, null, 1.36, null);
+    // font-size: $fs8;
+    // line-height: 1.36;
   }
-  font-size: $fs6;
-  line-height: 1.62;
-  letter-spacing: $ls3;
+  @include font(26px, null, 1.62, 0.06em);
+  // font-size: $fs6;
+  // line-height: 1.62;
+  // letter-spacing: $ls3;
   text-transform: uppercase;
 }

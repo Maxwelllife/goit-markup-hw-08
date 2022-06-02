@@ -40,10 +40,10 @@
 .team__employee-name {
   margin-top: 30px;
   margin-bottom: 10px;
-
-  font-weight: $fw3;
-  font-size: $fs3;
-  line-height: 1.19;
+  @include font(16px, 500, 1.19, null);
+  // font-weight: $fw3;
+  // font-size: $fs3;
+  // line-height: 1.19;
 
   color: $secondary-text-color;
 }

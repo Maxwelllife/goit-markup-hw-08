@@ -15,16 +15,17 @@
 
 .features__title {
   margin-bottom: 10px;
-
-  font-weight: $fw2;
-  font-size: $fs2;
+  @include font(14px, 700, null, null);
+  // font-weight: $fw2;
+  // font-size: $fs2;
   text-transform: uppercase;
   color: $secondary-text-color;
 }
 
 .text {
-  font-size: $fs2;
-  line-height: 1.71;
+  @include font(14px, null, 1.71, null);
+  // font-size: $fs2;
+  // line-height: 1.71;
 }
 
 .features__list {

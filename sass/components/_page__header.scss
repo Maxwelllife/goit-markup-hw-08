@@ -3,9 +3,11 @@
   border-bottom: 1px solid #ececec;
 
   background: $white-color;
-  font-weight: $fw3;
-  font-size: $fs2;
-  letter-spacing: $ls2;
+
+  @include font(14px, 500, null, 0.02em);
+  //   font-weight: $fw3;
+  //   font-size: $fs2;
+  //   letter-spacing: $ls2;
 }
 
 .page-header {

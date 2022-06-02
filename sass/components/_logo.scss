@@ -4,9 +4,10 @@
 
   font-family: $ff2;
   font-style: normal;
-  font-weight: $fw2;
-  font-size: $fs6;
-  line-height: 1.19;
+  @include font(26px, 700, 1.19, null);
+  // font-weight: $fw2;
+  // font-size: $fs6;
+  // line-height: 1.19;
 }
 
 .logo__link {

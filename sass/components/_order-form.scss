@@ -74,9 +74,10 @@
   padding: 40px;
 }
 .order-form__title {
-  font-size: 20px;
   text-align: center;
-  letter-spacing: $ls3;
+  @include font(20px, null, 1.19, 0.03em);
+  // font-size: 20px;
+  // letter-spacing: $ls3;
   color: $secondary-text-color;
 }
 
@@ -87,8 +88,9 @@
 
   position: relative;
   margin-top: 12px;
-  font-size: $fs1;
-  letter-spacing: 0.01em;
+  @include font(12px, null, null, 0.01em);
+  // font-size: $fs1;
+  // letter-spacing: 0.01em;
 
   &:focus-within > .order-form__input {
     border-color: $accient-color;

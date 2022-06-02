@@ -1,5 +1,7 @@
 @import './utils/variables';
 @import './utils/utilits';
+@import './utils/placeholders';
+@import './utils/mixines';
 @import './components/page__header';
 @import './components/site-nav';
 @import './components/logo';
@@ -18,4 +20,3 @@
 @import './components/examples__filter';
 @import './components/examples__list';
 @import './components/buttons';
-@import './utils/placeholders';

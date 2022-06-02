@@ -7,10 +7,11 @@
   border-radius: 4px;
 
   font-family: $ff1;
-  font-weight: $fw2;
-  font-size: $fs3;
-  letter-spacing: $ls3;
-  line-height: 1.88;
+  @include font(16px, 700, 1.88, 0.06em);
+  // font-weight: $fw2;
+  // font-size: $fs3;
+  // letter-spacing: $ls3;
+  // line-height: 1.88;
 
   color: $white-color;
   background-color: $accient-color;
@@ -21,9 +22,9 @@
 
   color: $black-color;
   background-color: $team-color;
-
-  font-weight: $fw3;
-  line-height: 1.63;
+  @include font(null, 500, 1.63, null);
+  // font-weight: $fw3;
+  // line-height: 1.63;
 
   &:hover,
   &:focus {

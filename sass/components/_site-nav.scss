@@ -67,8 +67,9 @@
 }
 .connect__link {
   @extend %flex-align-centr;
-  font-size: $fs1;
-  line-height: $lh2;
+  @include font(12px, null, 1.16, null);
+  // font-size: $fs1;
+  // line-height: $lh2;
   color: $primery-text-color;
   transition: color 250ms $cubic;
 
@@ -133,8 +134,9 @@
 .nav-menu__link {
   display: block;
   color: $secondary-text-color;
-  font-size: 40px;
-  line-height: 1.18;
+  @include font(40px, null, 1.18, null);
+  // font-size: 40px;
+  // line-height: 1.18;
   &:hover,
   &:focus {
     color: $accient-color;
@@ -151,8 +153,9 @@
 }
 
 .mob-connect__link {
-  font-size: $fs10;
-  line-height: $lh2;
+  @include font(24px, null, 1.16, null);
+  // font-size: $fs10;
+  // line-height: $lh2;
   color: $primery-text-color;
 }
 .mob-connect__link--big-blue {

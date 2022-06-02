@@ -10,9 +10,10 @@
   margin-bottom: 30px;
   text-align: center;
   color: $secondary-text-color;
-  font-weight: $fw2;
-  font-size: $fs9;
-  line-height: $lh2;
+  @include font(28px, 700, 1.16, null);
+  // font-weight: $fw2;
+  // font-size: $fs9;
+  // line-height: $lh2;
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
